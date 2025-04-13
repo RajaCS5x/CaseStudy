@@ -1,0 +1,40 @@
+package com.movie.registrationService.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.crypto.password.PasswordEncoder;
+import org.springframework.stereotype.Service;
+
+import com.movie.registrationService.dto.UserRequest;
+import com.movie.registrationService.model.User;
+import com.movie.registrationService.repository.UserRepository;
+
+
+@Service
+public class UserServiceImpl implements UserService {
+	
+	@Autowired
+	private UserRepository userRepository;
+	
+	@Autowired
+	private PasswordEncoder passwordEncoder;
+	
+	@Override
+	public String registerUser(UserRequest request) {
+		if(userRepository.existsByUsername(request.getUsername())) {
+			return "Username already exists!";
+		}
+		
+		if(userRepository.existsByEmail(request.getEmail())) {
+			return "Email already exists!";
+		}
+		
+		User user = new User();
+		user.setUsername(request.getUsername());
+		user.setPassword(passwordEncoder.encode(request.getPassword()));
+		user.setEmail(request.getEmail());
+		user.setRole(request.getRole());
+		
+		userRepository.save(user);
+		return "User registered successfully !!";
+	}
+}

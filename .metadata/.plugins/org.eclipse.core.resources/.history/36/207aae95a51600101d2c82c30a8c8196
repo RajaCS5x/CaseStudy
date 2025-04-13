@@ -1,0 +1,5 @@
+package com.movie.registrationService.model;
+
+public class Role {
+
+}

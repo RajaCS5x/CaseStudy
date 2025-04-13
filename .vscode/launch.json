@@ -1,0 +1,55 @@
+{
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Spring Boot-EurekaServerApplication<eurekaServer>",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "mainClass": "com.movie.eurekaServer.EurekaServerApplication",
+      "projectName": "eurekaServer",
+      "args": "",
+      "envFile": "${workspaceFolder}/.env",
+      "vmArgs": " -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=58495 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Dspring.jmx.enabled=true -Djava.rmi.server.hostname=localhost -Dspring.application.admin.enabled=true -Dspring.boot.project.name=eurekaServer"
+    },
+    {
+      "type": "java",
+      "name": "Spring Boot-ApiGatewayApplication<api-gateway>",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "mainClass": "com.movie.apiGateway.ApiGatewayApplication",
+      "projectName": "api-gateway",
+      "args": "",
+      "envFile": "${workspaceFolder}/.env"
+    },
+    {
+      "type": "java",
+      "name": "Spring Boot-RegistrationServiceApplication<registrationService>",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "mainClass": "com.movie.registrationService.RegistrationServiceApplication",
+      "projectName": "registrationService",
+      "args": "",
+      "envFile": "${workspaceFolder}/.env"
+    },
+    {
+      "type": "java",
+      "name": "Spring Boot-LoginSerivceApplication<login-serivce>",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "mainClass": "com.movie.login_serivce.LoginSerivceApplication",
+      "projectName": "login-serivce",
+      "args": "",
+      "envFile": "${workspaceFolder}/.env"
+    },
+    {
+      "type": "java",
+      "name": "Spring Boot-MovieServiceApplication<movie-service>",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "mainClass": "com.movie.movie_service.MovieServiceApplication",
+      "projectName": "movie-service",
+      "args": "",
+      "envFile": "${workspaceFolder}/.env"
+    }
+  ]
+}

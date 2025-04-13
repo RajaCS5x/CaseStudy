@@ -1,0 +1,9 @@
+package com.movie.registrationService.service;
+
+import com.movie.registrationService.dto.UserRequest;
+
+public interface UserService {
+	
+	
+	public String registerUser(UserRequest request) ;
+}

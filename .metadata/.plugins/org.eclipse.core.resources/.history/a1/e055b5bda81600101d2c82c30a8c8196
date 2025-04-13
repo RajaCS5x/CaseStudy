@@ -1,0 +1,15 @@
+package com.movie.registrationService.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.movie.registrationService.repository.UserRepository;
+
+import lombok.RequiredArgsConstructor;
+
+@Service
+@RequiredArgsConstructor
+public class UserService {
+	
+	private final UserRepository userRepository;
+}

@@ -1,0 +1,5 @@
+package com.movie.registrationService.dto;
+
+public class UserRequest {
+
+}

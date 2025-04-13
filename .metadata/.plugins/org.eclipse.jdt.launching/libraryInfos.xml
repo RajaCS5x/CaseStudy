@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<libraryInfos>
+    <libraryInfo home="C:\Program Files (x86)\jdk-24_windows-x64_bin\jdk-24\bin" version="24">
+        <bootpath>
+            <entry path="null"/>
+        </bootpath>
+        <extensionDirs>
+            <entry path="null"/>
+        </extensionDirs>
+        <endorsedDirs>
+            <entry path="null"/>
+        </endorsedDirs>
+    </libraryInfo>
+    <libraryInfo home="C:\Program Files\Java\jdk-21" version="21.0.6"/>
+    <libraryInfo home="C:\Users\BHUPENDRA SINGH\Downloads\eclipse-java-2022-09-R-win32-x86_64\eclipse\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.4.v20220903-1038\jre" version="17.0.4.1"/>
+    <libraryInfo home="C:\Program Files\Java\jdk-11.0.17" version="11.0.17"/>
+    <libraryInfo home="C:\Users\BHUPENDRA SINGH\Downloads\eclipse-java-2022-09-R-win32-x86_64\eclipse\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.4.v20220903-1038" version="17.0.4.1"/>
+</libraryInfos>

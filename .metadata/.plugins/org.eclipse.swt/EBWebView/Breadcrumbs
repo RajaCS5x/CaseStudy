@@ -1,0 +1,30 @@
+0:12:01 Memory Pressure: Critical
+0:12:06 Memory Pressure: Critical
+0:12:11 Memory Pressure: Critical
+0:12:16 Memory Pressure: Critical
+0:12:21 Memory Pressure: Critical
+0:12:26 Memory Pressure: Critical
+0:12:31 Memory Pressure: Critical
+0:12:36 Memory Pressure: Critical
+0:12:41 Memory Pressure: Critical
+0:12:46 Memory Pressure: Critical
+0:12:51 Memory Pressure: Critical
+0:12:56 Memory Pressure: Critical
+0:13:01 Memory Pressure: Critical
+0:13:06 Memory Pressure: Critical
+0:13:08 Browser1 Close Tab1 at 0
+0:13:08 Tab1 WebContentsDestroyed
+0:13:09 Microsoft.Shutdown.OnWindowClosing
+0:13:09 Microsoft.Shutdown.OnWindowClosing_MaybeClearBrowsingDataOnExit
+0:13:09 Microsoft.Shutdown.OnWindowClosing_ClearBrowsingDataOnExitNotInProgress
+0:13:09 Microsoft.Shutdown.OnWindowClosingPostClearBrowsingData_NoBrowsingDataCleared
+0:13:09 Widget Closed: BrowserFrame
+0:13:09 Microsoft.Last_Browser_Removed
+0:13:09 Microsoft.Shutdown.ShutdownIfNoBrowsers
+0:13:09 Microsoft.Shutdown.SetTryingToQuit_Quitting
+0:13:09 Microsoft.Shutdown.NotifyAppTerminating
+0:13:09 Microsoft.Shutdown.OnAppExiting
+0:13:09 Microsoft.Shutdown.HandleAppExitingForPlatform_Aura
+0:13:09 Microsoft.Shutdown.HandleAppExitingForPlatform_Aura.NotificationUIManager_StartShutdown
+0:13:09 Microsoft.Shutdown.HandleAppExitingForPlatform_Aura.CloseAllSecondaryWidgets
+0:13:10 Shutdown
