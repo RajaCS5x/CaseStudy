@@ -12,7 +12,7 @@ import io.jsonwebtoken.SignatureAlgorithm;
 @Component
 public class JwtUtil {
 
-  private final String jwtsecret = "ThisIsASecretKeyThatIsLongEnoughToBeSecure!"; // 256-bit key
+  private final String jwtsecret = "your_secret_key_here_make_it_long_and_secure_for_better_security"; // 256-bit key
   private final long jwtExpiration = 86400000; // 1 day in milliseconds
 
   public String generateToken(String username, String role) {

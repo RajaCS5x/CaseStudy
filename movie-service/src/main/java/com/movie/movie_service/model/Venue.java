@@ -1,10 +1,8 @@
 package com.movie.movie_service.model;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import java.util.List;
+
+import jakarta.persistence.*;
 import jakarta.validation.constraints.NotBlank;
 import lombok.Data;
 
@@ -31,4 +29,13 @@ public class Venue {
 
   @NotBlank(message = "Pincode is required")
   private String pincode;
+
+  @NotBlank(message = "Contact number is required")
+  private String contactNumber;
+
+  @NotBlank(message = "Merchant username is required")
+  private String merchantUsername;
+
+  @OneToMany(mappedBy = "venue", cascade = CascadeType.ALL, orphanRemoval = true)
+  private List<CinemaHall> cinemaHalls;
 }

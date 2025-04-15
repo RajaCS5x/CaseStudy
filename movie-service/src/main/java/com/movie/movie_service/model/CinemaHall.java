@@ -28,8 +28,11 @@ public class CinemaHall {
   @NotBlank(message = "Hall name is required")
   private String name;
 
-  @Positive(message = "Capacity must be a positive number")
-  private int capacity;
+  @Positive(message = "seats must be a positive number")
+  private int TotalSeats;
+
+  @NotBlank(message = "Screen type is required")
+  private String HallType;
 
   @ManyToOne(fetch = FetchType.LAZY)
   @JoinColumn(name = "venue_id")

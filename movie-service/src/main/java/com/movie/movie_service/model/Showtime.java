@@ -26,6 +26,8 @@ public class Showtime {
   @NotNull(message = "Showtime must have a start time")
   private LocalDateTime startTime;
 
+  private LocalDateTime endTime;
+
   @Min(value = 0, message = "Price must be positive")
   private double price;
 
@@ -39,4 +41,6 @@ public class Showtime {
 
   @Min(value = 0, message = "Available seats cannot be negative")
   private Integer availableSeats;
+
+  private boolean isActive;
 }
